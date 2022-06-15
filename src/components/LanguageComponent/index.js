@@ -22,7 +22,6 @@ export default function PositionedMenu() {
     localStorage.setItem('lng',lng)
     handleClose();
     window.location.reload()
-   // console.log('i18n',i18n.language)
   }
 
   return (

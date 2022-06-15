@@ -22,9 +22,6 @@ const Home=()=>{
 
 
 
-    useEffect(()=>{
-       console.log('movies',movies)
-    },[movies])
      
     useEffect(()=>{
       let api = FEATURED_API
@@ -32,7 +29,6 @@ const Home=()=>{
        api=api+`&query=${searchText}`
 
       axios.get(api).then(response=>{
-        console.log('response',response.data.results)
         setMovies(response.data.results)
        })
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -69,7 +65,6 @@ const Home=()=>{
     }  
 
     const handleChange = (event) => {
-      console.log('event',event.target.value)
       setSelect(event.target.value);     
     };
     const handleTextChange=(event)=>{
@@ -86,7 +81,6 @@ const Home=()=>{
 
           try {
             const response = await axios.get(api)
-            console.log('response',response.data.results)
             if (response?.data?.results.length > 0) {
                setMovies(response.data.results)
                setLoading(false)

@@ -17,7 +17,8 @@ export const FooterWrapper = styled('div')(({ theme }) => ({
     marginTop:'10px',
     marginBottom: '0px',
     flexDirection:'column',
-    width:'100%'
+    width:'100%',
+    minWidth: '1500px'
   }));
 
 

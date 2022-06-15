@@ -9,5 +9,7 @@
     "release_date_desc":"Azalan Yayınlanma Tarihi",
     "search":"Arama",
     "result_sorting":"Sonuç Sıralama",
-    "detail":"Detay"
+    "detail":"Detay",
+    "summary":"Özet",
+    "go_back":"Geri"
 }

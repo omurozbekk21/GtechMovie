@@ -1,6 +1,6 @@
 
 import Home from './container/home'
-import About from './container/about'
+import MovieDetail from './container/detail'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import {
@@ -16,7 +16,7 @@ function App() {
      <Header/>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/movie-detail/:id" element={<MovieDetail />} />
     </Routes>
 <Footer/>
   </BrowserRouter>

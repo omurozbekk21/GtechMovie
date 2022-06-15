@@ -9,5 +9,7 @@
     "release_date_desc":"Release  Date Descending",
     "search":"Search",
     "result_sorting":"Result sorting",
-    "detail":"Detail"
+    "detail":"Detail",
+    "summary":"Summary",
+    "go_back":"Back"
 }

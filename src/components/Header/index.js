@@ -2,7 +2,6 @@ import * as React from 'react';
 import {useTheme } from '@mui/material/styles';
 import {Box,Drawer,Toolbar,List,Divider,IconButton,ListItem,ListItemButton,ListItemText,ListItemIcon} from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
-import MenuIcon from '@mui/icons-material/Menu';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -20,9 +19,6 @@ const Header =()=> {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
 
   const handleDrawerClose = () => {
     setOpen(false);
@@ -34,15 +30,6 @@ const Header =()=> {
       <CssBaseline />
       <AppBar position="fixed" open={open} style={{ background: '#2E3B55' }}>
         <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            sx={{ mr: 2, ...(open && { display: 'none' }) }}
-          >
-            <MenuIcon />
-          </IconButton>
           <ImageContainer  src={GTECHLogo}  alt="fireSpot"/>
           <LanguageSelection/>
         </Toolbar>

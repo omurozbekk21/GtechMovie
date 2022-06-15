@@ -1,11 +1,19 @@
 import { Rating,Button } from '@mui/material';
+import { useNavigate } from "react-router-dom";
 import React from 'react'
 import {CardWrapper,ImgWrapper,CardAction,CardImage,CardTitle,CardDate,CardItems,CardInfo,CardButton} from './styled'
 import { useTranslation } from 'react-i18next';
+
+
 const Cards=({data})=>{
+    const navigate = useNavigate();
     const IMG_API = 'https://image.tmdb.org/t/p/w1280';
     const {t} =useTranslation();
-    console.log('data',data)
+    
+    const movieDetail=(id)=>{
+        navigate(`/movie-detail/${id}`)
+    }
+     
     return(
         <CardWrapper>
             <ImgWrapper >
@@ -22,7 +30,7 @@ const Cards=({data})=>{
             </CardItems>
             <CardInfo>
             <CardDate>{data?.release_date} </CardDate>
-         <CardButton as={Button} variant="outlined" color="primary">{t('detail')}</CardButton>
+         <CardButton as={Button} variant="outlined" color="primary"   onClick={() => movieDetail(data?.id)}>{t('detail')}</CardButton>
             </CardInfo>
 
 

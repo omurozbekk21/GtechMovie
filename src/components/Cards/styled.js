@@ -11,7 +11,7 @@ export const CardWrapper = styled('div')(({ theme }) => ({
   overflow:'hidden',
   cursor: 'pointer',
   margin:'10px 10px 30px 10px',
-  height:'470px'
+  height:'470px',
   }));
 
 export const ImgWrapper = styled('div')(({ theme }) => ({
