@@ -1,3 +1,13 @@
 {
-    "greeting":"Merhaba Ben"
+    "greeting":"Merhaba Ben",
+    "popular_films":"Popüler Filmler",
+    "popularity_asc":"Artan Popülerlik",
+    "popularity_desc":"Azalan Popülerlik",
+    "rating_asc":"Artan Oylar",
+    "rating_desc":"Azalan Oylar",
+    "release_date_asc":"Artan Yayınlanma Tarihi",
+    "release_date_desc":"Azalan Yayınlanma Tarihi",
+    "search":"Arama",
+    "result_sorting":"Sonuç Sıralama",
+    "detail":"Detay"
 }

@@ -10,7 +10,7 @@ export const CardWrapper = styled('div')(({ theme }) => ({
   position:'relative',
   overflow:'hidden',
   cursor: 'pointer',
-  margin:'10px',
+  margin:'10px 10px 30px 10px',
   height:'470px'
   }));
 

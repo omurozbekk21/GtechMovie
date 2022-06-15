@@ -12,6 +12,7 @@ import {
 function App() {
   return (
     <BrowserRouter>
+     <style>{"body { background-color: #5b729c; }"}</style>
      <Header/>
     <Routes>
       <Route path="/" element={<Home />} />

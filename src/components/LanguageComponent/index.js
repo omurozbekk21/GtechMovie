@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 
 
 
-
 export default function PositionedMenu() {
     const {i18n} =useTranslation();
   const [anchorEl, setAnchorEl] = useState(null);
@@ -20,7 +19,9 @@ export default function PositionedMenu() {
   };
   const changeLanguage = (lng)=>{
     i18n.changeLanguage(lng)
+    localStorage.setItem('lng',lng)
     handleClose();
+    window.location.reload()
    // console.log('i18n',i18n.language)
   }
 
@@ -32,6 +33,7 @@ export default function PositionedMenu() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
+        color="warning"
       >
        {i18n.language}
       </Button>

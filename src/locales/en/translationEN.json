@@ -1,3 +1,13 @@
 {
-    "greeting":"Hi,I'm"
+    "greeting":"Hi,I'm",
+    "popular_films":"Popular Films",
+    "popularity_asc":"Popularity Ascending",
+    "popularity_desc":"Popularity Descending",
+    "rating_asc":"Rating Ascending",
+    "rating_desc":"Rating Descending",
+    "release_date_asc":"Release Date Ascending",
+    "release_date_desc":"Release  Date Descending",
+    "search":"Search",
+    "result_sorting":"Result sorting",
+    "detail":"Detail"
 }
